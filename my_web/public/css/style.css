@@ -1,0 +1,40 @@
+.Header{
+    background-color: blanchedalmond;
+    height: 5em;
+    justify-content: space-between;
+}
+
+@font-face {
+    font-family: BYekan;
+    src: url('../fonts/BYekan-webfont.ttf');
+}
+
+*{
+    font-family: 'BYekan';   
+}
+
+.welcome_to_mySite{
+    background-color: blue;
+}
+
+.WhyOur__mainPage{
+    background-color: aqua;
+    height: max-content;
+    width: 10em;
+    /* flex-shrink: 1; */
+    flex: 1 auto;
+}
+
+.whyOut__h3{
+    color: white;
+}
+
+.MainPage img{
+    width: 90vw;
+}
+
+@media (max-width:890px){
+    .MainPage__index{
+        flex-direction: column;
+    }
+}

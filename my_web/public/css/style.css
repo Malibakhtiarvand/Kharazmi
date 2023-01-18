@@ -33,6 +33,33 @@
     width: 90vw;
 }
 
+.User{
+    margin: auto auto;
+    height: 20em;
+    width: 20em;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.User input{
+    border-radius: 3px;
+}
+
+.User input{
+    background-color: rgba(113, 123, 167, 0.4);
+}
+
+.User>*{
+}
+
+.SingUp{
+    background-size: 100% 100%;
+    background-image: url('../imgs/singUp.jpg');
+}
+
 @media (max-width:890px){
     .MainPage__index{
         flex-direction: column;

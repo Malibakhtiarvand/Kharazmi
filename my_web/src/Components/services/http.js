@@ -1,5 +1,6 @@
 import Axios from 'axios'
 const SERVER = 'http://localhost:9000'
+Axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 export const ConnectToServer = (method, data = {}, userId = 1) => {
     switch (method) {

@@ -1,6 +1,8 @@
 import { useRef, useState } from 'react'
 import SimpleReactValidator from 'simple-react-validator'
 import { UserContext } from '../../ContextApi/Users'
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export const UserValidator = (props) => {
     const Validator = useRef(
@@ -27,6 +29,7 @@ export const UserValidator = (props) => {
     return (
         <UserContext.Provider value={{ name, password, passwordAgain,Validator, setName, setPassword, setPasswordAgain }}>
             {props.children}
+            <ToastContainer />
         </UserContext.Provider>
     )
 }

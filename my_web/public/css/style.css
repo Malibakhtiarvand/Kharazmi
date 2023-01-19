@@ -49,10 +49,12 @@
 }
 
 .User input{
-    background-color: rgba(113, 123, 167, 0.4);
+    background-color: rgba(253, 255, 255, 0.877);
 }
 
-.User>*{
+.User>input::placeholder{
+    text-align: right;
+    color: rgb(205, 96, 255);
 }
 
 .SingUp{
@@ -63,5 +65,11 @@
 @media (max-width:890px){
     .MainPage__index{
         flex-direction: column;
+    }
+}
+
+@media (max-width:340px){
+    .SingUp{
+        width: 100%;
     }
 }

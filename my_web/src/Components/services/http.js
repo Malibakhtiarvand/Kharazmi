@@ -2,20 +2,20 @@ import Axios from 'axios'
 const SERVER = 'http://localhost:9000'
 Axios.defaults.headers.post['Content-Type'] = 'application/json';
 
-export const ConnectToServer = (method, data = {}, userId = 1) => {
+export const ConnectToServer = (method, data = {}, Id = 1, url) => {
     switch (method) {
         case 'GET':
-            return Axios.get(`${SERVER}/Users`)
+            return Axios.get(`${SERVER}/${url}`)
 
         case 'POST':
-            return Axios.post(`${SERVER}/Users`, data)
+            return Axios.post(`${SERVER}/${url}`, data)
 
         case 'DELETE':
-            return Axios.delete(`${SERVER}/Users/${userId}`)
+            return Axios.delete(`${SERVER}/${url}/${Id}`)
 
         case 'PUT':
-            return Axios.put(`${SERVER}/Users/${userId}`, data)
-            
+            return Axios.put(`${SERVER}/${url}/${Id}`, data)
+
         default:
             return method
     }
